@@ -4,14 +4,14 @@ import InjectableSvg from "@/components/common/InjectableSvg"
 
 import about_img1 from "@/assets/img/images/about_img01.png"
 import about_img2 from "@/assets/img/images/about_img02.png"
-import about_img3 from "@/assets/img/images/about_img03.png"
-import author1 from "@/assets/img/images/author01.png"
-import author2 from "@/assets/img/images/author01.png"
-import author3 from "@/assets/img/images/author01.png"
-import author4 from "@/assets/img/images/author01.png"
+import about_img3 from "@/assets/img/other-images/shipping-about.jpg"
+// import author1 from "@/assets/img/images/author01.png"
+// import author2 from "@/assets/img/images/author01.png"
+// import author3 from "@/assets/img/images/author01.png"
+// import author4 from "@/assets/img/images/author01.png"
 import shape_1 from "@/assets/img/images/about_shape.png"
 
-const About = () => {
+const AboutOne = () => {
    return (
       <section className="about__area pt-120 pb-120">
          <div className="container">
@@ -26,24 +26,24 @@ const About = () => {
                <div className="col-lg-6">
                   <div className="about__content">
                      <div className="section__title mb-15">
-                        <span className="sub-title">Reliable Logistic & Transport Solutions</span>
-                        <h2 className="title">Delivering the Full Range <br /> Of logistics solutions</h2>
+                        {/* <span className="sub-title">Our Global Network</span> */}
+                        <h2 className="title">Our Global Network</h2>
                      </div>
-                     <p>Adipiscing elit. Aliquam vulputate, tortor nec com ultri viverra Suspen disse faucibus sed dolor eget Sed id urna. Hiftler Group irepresentatilve in loisticsti for operator providings.</p>
+                     <p><strong>Amber Shipping Line</strong> connects businesses across continents, providing seamless logistics solutions that span the globe. Our extensive network ensures reliable, efficient, and secure transportation of goods to and from major markets worldwide. With advanced technology and a dedicated team, we simplify complex supply chains, enabling our clients to focus on growth and innovation.</p>
                      <div className="about__content-bottom">
                         <div className="about__list-box-wrap">
                            <div className="about__list-box">
                               <ul className="list-wrap">
-                                 <li><i className="flaticon-check"></i>Quality Control System</li>
-                                 <li><i className="flaticon-check"></i>100% Satisfaction Guarantee</li>
+                                 <li><i className="flaticon-check"></i>Global Connectivity</li>
+                                 <li><i className="flaticon-check"></i>Reliable & Secure</li>
                                  <li><i className="flaticon-check"></i>Professional and Qualified</li>
-                                 <li><i className="flaticon-check"></i>Safe, Reliable And Express</li>
+                                 <li><i className="flaticon-check"></i>Dedicated Support</li>
                               </ul>
                            </div>
                            <Link href="/services" className="btn">Get in Touch <InjectableSvg src="/assets/img/icon/right_arrow.svg" alt="" className="injectable" /></Link>
                         </div>
                         <div className="about__review-wrap">
-                           <div className="about__review-box">
+                           {/* <div className="about__review-box">
                               <div className="about__review-author">
                                  <Image src={author1} alt="img" />
                                  <Image src={author2} alt="img" />
@@ -58,9 +58,9 @@ const About = () => {
                                  <i className="fas fa-star"></i>
                               </div>
                               <span>Clients 4.7 (1,567 Reviews)</span>
-                           </div>
+                           </div> */}
                            <div className="experience__box">
-                              <h4 className="title">25</h4>
+                              <h4 className="title">10</h4>
                               <span>Years Of <br /> Experience</span>
                            </div>
                         </div>
@@ -76,4 +76,4 @@ const About = () => {
    )
 }
 
-export default About
+export default AboutOne

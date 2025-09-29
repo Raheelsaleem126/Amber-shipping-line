@@ -1,23 +1,46 @@
-import Breadcumb from "@/components/common/Breadcumb"
-import ScrollToTop from "@/components/common/ScrollToTop"
-import HeaderFour from "@/layouts/headers/HeaderFour"
-import ServiceDetailsArea from "./ServiceDetailsArea"
-import CTA from "../../who-we-are/CTA"
-import FooterTwo from "@/layouts/footers/FooterTwo"
+"use client";
+import Breadcumb from "@/components/common/Breadcumb";
+import ScrollToTop from "@/components/common/ScrollToTop";
+import HeaderOne from "@/layouts/headers/HeaderOne";
+import ServiceDetailsArea from "./ServiceDetailsArea";
+import CTA from "../../who-we-are/CTA";
+import FooterOne from "@/layouts/footers/FooterOne";
+import { StaticImageData } from "next/image";
 
-const ServiceDetails = () => {
-   return (
-      <div className="theme-red">
-         <ScrollToTop />
-         <HeaderFour />
-         <main className="fix">
-            <Breadcumb title="Service Details" sub_title="Service Details" />
-            <ServiceDetailsArea />
-         </main>
-         <CTA />
-         <FooterTwo style={true} />
-      </div>
-   )
+interface Service {
+  slug: string;
+  title: string;
+  sub_title: string;
+  description: string;
+  img?: StaticImageData;
+  details: {
+    title: string;
+    description: string;
+    progress: { title: string; value: number }[];
+    inner_title: string;
+    inner_description: string;
+    benefits: string[];
+    faqs: { question: string; answer: string }[];
+  };
 }
 
-export default ServiceDetails
+interface Props {
+  service: Service;
+}
+
+const ServiceDetails = ({ service }: Props) => {
+  return (
+    <div className="theme-red">
+      <ScrollToTop />
+      <HeaderOne />
+      <main className="fix">
+        <Breadcumb title={service.title} sub_title={service.sub_title} />
+        <ServiceDetailsArea service={service} />
+      </main>
+      <CTA />
+      <FooterOne  />
+    </div>
+  );
+};
+
+export default ServiceDetails;

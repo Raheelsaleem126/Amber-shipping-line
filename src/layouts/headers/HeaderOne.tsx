@@ -44,12 +44,12 @@ const HeaderOne = () => {
                         </div>
                         <div className="tgmenu__action d-none d-md-flex">
                            <ul className="list-wrap">
-                              <li className="header-search">
+                              {/* <li className="header-search">
                                  <a onClick={() => setIsSearch(true)} style={{ cursor: "pointer" }} className="search-open-btn">
                                     <i className="flaticon-search"></i>
                                  </a>
-                              </li>
-                              <li className="header-contact">
+                              </li> */}
+                              {/* <li className="header-contact">
                                  <div className="icon">
                                     <i className="flaticon-telephone"></i>
                                  </div>
@@ -57,7 +57,7 @@ const HeaderOne = () => {
                                     <span>Emergency Call:</span>
                                     <Link href="tel:0123456789">(205) 555-0100</Link>
                                  </div>
-                              </li>
+                              </li> */}
                               <li className="header-btn"><Link href="/contact" className="btn"><i className="flaticon-uptrend"></i>Track Order</Link></li>
                            </ul>
                         </div>

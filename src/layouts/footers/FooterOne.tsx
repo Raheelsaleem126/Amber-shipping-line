@@ -1,9 +1,9 @@
 "use client"
-import InjectableSvg from "@/components/common/InjectableSvg"
+// import InjectableSvg from "@/components/common/InjectableSvg"
 import Image from "next/image"
 import Link from "next/link"
 
-import shape_1 from "@/assets/img/images/cta_shape.png"
+// import shape_1 from "@/assets/img/images/cta_shape.png"
 import shape_2 from "@/assets/img/images/footer_shape01.png"
 import shape_3 from "@/assets/img/images/footer_shape02.png"
 import logo from "@/assets/img/logo/w_logo.svg"
@@ -12,7 +12,7 @@ const FooterOne = () => {
    return (
       <footer className="footer__area fix">
          <div className="container">
-            <div className="cta__wrap fix">
+            {/* <div className="cta__wrap fix">
                <div className="row align-items-center">
                   <div className="col-lg-7">
                      <div className="cta__content">
@@ -28,7 +28,7 @@ const FooterOne = () => {
                <div className="cta__shape">
                   <Image src={shape_1} alt="img" data-aos="fade-up-right" data-aos-delay="400" />
                </div>
-            </div>
+            </div> */}
             <div className="footer__top">
                <div className="row">
                   <div className="col-xl-4 col-lg-5 col-md-6">

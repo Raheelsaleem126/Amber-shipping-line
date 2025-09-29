@@ -1,32 +1,36 @@
-import FooterTwo from "@/layouts/footers/FooterTwo"
+import FooterOne from "@/layouts/footers/FooterOne"
 import Breadcumb from "../common/Breadcumb"
-import Brand from "../homes/home-one/Brand"
-import Testimonial from "../homes/home-one/Testimonial"
+// import Brand from "../homes/home-one/Brand"
+// import Testimonial from "../homes/home-one/Testimonial"
 import Team from "../homes/home-three/Team"
-import AboutArea from "./AboutArea"
-import Counter from "./Counter"
-import FeaturesArea from "./FeaturesArea"
-import Pricing from "./Pricing"
-import VideoArea from "./VideoArea"
-import HeaderFour from "@/layouts/headers/HeaderFour"
+// import AboutArea from "./AboutArea"
+import AboutOne from "../homes/home-one/About"
+// import Counter from "./Counter"
+// import FeaturesArea from "./FeaturesArea"
+// import Pricing from "./Pricing"
+// import VideoArea from "./VideoArea"
 import ScrollToTop from "../common/ScrollToTop"
-
+import HeaderOne from "@/layouts/headers/HeaderOne"
+import MarqueeArea from "../homes/home-one/Marquee"
+import LogoCloud from "../logo-cloud/page"
 const About = () => {
    return (
       <div className="theme-red">
-         <HeaderFour />
+         <HeaderOne />
          <ScrollToTop />
          <main className="fix">
             <Breadcumb sub_title="About Us" title="About Us" />
-            <AboutArea />
-            <FeaturesArea />
-            <VideoArea />
-            <Counter />
-            <Pricing />
+            <AboutOne />
+            <MarqueeArea/>
+            {/* <FeaturesArea /> */}
+            {/* <VideoArea /> */}
+            {/* <Counter /> */}
+            {/* <Pricing /> */}
             <Team style={false} />
-            <Testimonial style={true} />
-            <Brand />
-            <FooterTwo />
+            {/* <Testimonial style={true} /> */}
+            {/* <Brand /> */}
+            <LogoCloud/>
+            <FooterOne />
          </main>
       </div>
    )
