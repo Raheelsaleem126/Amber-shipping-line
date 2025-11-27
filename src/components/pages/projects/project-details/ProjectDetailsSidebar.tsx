@@ -22,10 +22,10 @@ const ProjectDetailsSidebar = () => {
                   <span className="title">Social:</span>
                   <ul className="list-wrap">
                      <li><Link href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
-                     <li><Link href="https://twitter.com" target="_blank"><i className="fab fa-twitter"></i></Link></li>
-                     <li><Link href="https://www.whatsapp.com/" target="_blank"><i className="fab fa-whatsapp"></i></Link></li>
-                     <li><Link href="https://www.instagram.com/" target="_blank"><i className="fab fa-instagram"></i></Link></li>
-                     <li><Link href="https://www.youtube.com/" target="_blank"><i className="fab fa-youtube"></i></Link></li>
+                     {/* <li><Link href="https://twitter.com" target="_blank"><i className="fab fa-twitter"></i></Link></li> */}
+                     <li><Link href="https://wa.me/923434613799?text=Hello%20I%20have%20query!" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></Link></li>
+                     {/* <li><Link href="https://www.instagram.com/" target="_blank"><i className="fab fa-instagram"></i></Link></li> */}
+                     {/* <li><Link href="https://www.youtube.com/" target="_blank"><i className="fab fa-youtube"></i></Link></li> */}
                   </ul>
                </div>
             </div>

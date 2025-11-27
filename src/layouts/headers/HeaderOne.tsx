@@ -58,6 +58,17 @@ const HeaderOne = () => {
                                     <Link href="tel:0123456789">(205) 555-0100</Link>
                                  </div>
                               </li> */}
+                              <li className="header-btn">
+                                 <Link
+                                    href="https://wa.me/923434613799?text=Hello%20I%20have%20query!"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn"
+                                    style={{ backgroundColor: "#25D366", color: "#FFFFFF" }}
+                                 >
+                                    <i className="fab fa-whatsapp"></i>WhatsApp
+                                 </Link>
+                              </li>
                               <li className="header-btn"><Link href="/contact" className="btn"><i className="flaticon-uptrend"></i>Track Order</Link></li>
                            </ul>
                         </div>

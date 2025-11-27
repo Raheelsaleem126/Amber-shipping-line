@@ -59,10 +59,11 @@ const FooterOne = () => {
                         <div className="footer__link">
                            <ul className="list-wrap">
                               <li><Link href="/how-it-work">How it’s Work</Link></li>
-                              <li><Link href="/client">Partners</Link></li>
-                              <li><Link href="/testimonial">Testimonials</Link></li>
-                              <li><Link href="/project">Case Studies</Link></li>
-                              <li><Link href="/pricing">Pricing</Link></li>
+                              <li><Link href="/team">Team</Link></li>
+                              {/* <li><Link href="/client">Partners</Link></li> */}
+                              {/* <li><Link href="/testimonial">Testimonials</Link></li> */}
+                              {/* <li><Link href="/project">Case Studies</Link></li> */}
+                              {/* <li><Link href="/pricing">Pricing</Link></li> */}
                            </ul>
                         </div>
                      </div>
@@ -79,11 +80,11 @@ const FooterOne = () => {
                               </li>
                               <li>
                                  <i className="flaticon-telephone"></i>
-                                 <Link href="tel:923363860313">+92 3363860313</Link>
+                                 <Link href="tel:92 343 4613799">+92 343 4613799</Link>
                               </li>
                               <li>
                                  <i className="flaticon-time"></i>
-                                 <p>Mon – Fri: 9:30 am – 8 pm, <br /> Sunday|Saturday: <span>CLOSED</span></p>
+                                 <p>Mon – Sat: 9:30 am – 8 pm, <br /> Sunday: <span>Closed</span></p>
                               </li>
                            </ul>
                         </div>
@@ -96,17 +97,17 @@ const FooterOne = () => {
                <div className="row align-items-center">
                   <div className="col-md-7">
                      <div className="copyright-text">
-                        <p>Copyright <Link href="/">©ASL</Link> | All Right Reserved</p>
+                        <p>Copyright <Link href="/">©ASL-Group Of Shipping Line</Link> | All Right Reserved</p>
                      </div>
                   </div>
                   <div className="col-md-5">
                      <div className="footer__social">
                         <ul className="list-wrap">
                            <li><Link href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
-                           <li><Link href="https://twitter.com" target="_blank"><i className="fab fa-twitter"></i></Link></li>
-                           <li><Link href="https://www.whatsapp.com/" target="_blank"><i className="fab fa-whatsapp"></i></Link></li>
-                           <li><Link href="https://www.instagram.com/" target="_blank"><i className="fab fa-instagram"></i></Link></li>
-                           <li><Link href="https://www.youtube.com/" target="_blank"><i className="fab fa-youtube"></i></Link></li>
+                           {/* <li><Link href="https://twitter.com" target="_blank"><i className="fab fa-twitter"></i></Link></li> */}
+                           <li><Link href="https://wa.me/923434613799?text=Hello%20I%20have%20query!" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></Link></li>
+                           {/* <li><Link href="https://www.instagram.com/" target="_blank"><i className="fab fa-instagram"></i></Link></li> */}
+                           {/* <li><Link href="https://www.youtube.com/" target="_blank"><i className="fab fa-youtube"></i></Link></li> */}
                         </ul>
                      </div>
                   </div>

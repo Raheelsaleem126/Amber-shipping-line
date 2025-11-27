@@ -48,14 +48,14 @@ const ContactForm = () => {
         )
         .then(
           () => {
-            toast.success("Message sent successfully!", {
+            toast.success("Your query has been submitted successfully!", {
               position: "top-center",
             });
             reset();
           },
           (error) => {
             console.error("Email send failed:", error.text);
-            toast.error("Failed to send message. Try again later.", {
+            toast.error("Failed to submit your query. Try again later.", {
               position: "top-center",
             });
           }

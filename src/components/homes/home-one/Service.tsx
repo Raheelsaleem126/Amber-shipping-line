@@ -29,7 +29,7 @@ const Service = () => {
             </div>
             <div className="row gutter-24 justify-content-center">
                {service_data.filter((items) => items.page === "home_1").map((item) => (
-                  <div key={item.id} className="col-xl-3 col-lg-4 col-sm-6">
+                  <div key={item.id} className="col-xl-4 col-lg-4 col-sm-6">
                      <div className="services__item">
                         <div className="services__thumb-wrap">
                            <div className="services__thumb">

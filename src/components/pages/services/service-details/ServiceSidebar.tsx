@@ -2,55 +2,45 @@ import Image from "next/image"
 import Link from "next/link"
 
 import sevice_details1 from "@/assets/img/logo/logo02.svg"
+import logo1 from "@/assets/img/logo/PNG A b.png"
 import InjectableSvg from "@/components/common/InjectableSvg"
+import service_data from "@/data/ServiceData"
+
+// Helper function to generate slug from title
+const generateSlug = (title: string) => {
+   return title
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^a-z0-9-]/g, "");
+};
 
 const ServiceSidebar = () => {
+   // Get all services with inner_page data
+   const services = service_data.filter((item) => item.page === "inner_page" && item.details);
+
    return (
       <div className="col-30">
          <aside className="services__sidebar">
             <div className="services__widget">
                <div className="services__cat-list">
                   <ul className="list-wrap">
-                     <li>
-                        <Link href="/services-details">
-                           <span><i className="flaticon-ship"></i>Ocean Freight</span> <i className="flaticon-right-arrow"></i>
-                        </Link>
-                     </li>
-                     <li>
-                        <Link href="/services-details">
-                           <span><i className="flaticon-air-freight"></i>Air Freight</span> <i className="flaticon-right-arrow"></i>
-                        </Link>
-                     </li>
-                     <li>
-                        <Link href="/services-details">
-                           <span><i className="flaticon-train"></i>Rail Freight</span> <i className="flaticon-right-arrow"></i>
-                        </Link>
-                     </li>
-                     <li>
-                        <Link href="/services-details">
-                           <span><i className="flaticon-truck"></i>Road Freight</span> <i className="flaticon-right-arrow"></i>
-                        </Link>
-                     </li>
-                     <li>
-                        <Link href="/services-details">
-                           <span><i className="flaticon-warehouse-1"></i>Warehouse</span> <i className="flaticon-right-arrow"></i>
-                        </Link>
-                     </li>
-                     <li>
-                        <Link href="/services-details">
-                           <span><i className="flaticon-delivery-cart"></i>Cargo Freight</span> <i className="flaticon-right-arrow"></i>
-                        </Link>
-                     </li>
+                     {services.map((service) => (
+                        <li key={service.id}>
+                           <Link href={`/services-details/${generateSlug(service.title)}`}>
+                              <span><i className={service.icon}></i>{service.title}</span> <i className="flaticon-right-arrow"></i>
+                           </Link>
+                        </li>
+                     ))}
                   </ul>
                </div>
             </div>
             <div className="services__widget services__widget-two">
                <div className="sidebar__logo">
-                  <Link href="/"><Image src={sevice_details1} alt="logo" /></Link>
+                  <Link href="/"><Image src={logo1} alt="logo" /></Link>
                </div>
                <div className="sidebar__contact">
                   <h2 className="title">Logistics & Cargo <br /> for Business</h2>
-                  <Link href="tle:0123456789" className="sidebar__phone"><i className="flaticon-telephone"></i>(123) 565-8901</Link>
+                  <Link href="tel:92 343 4613799" className="sidebar__phone"><i className="flaticon-telephone"></i>+92 343 4613799</Link>
                   <Link href="/contact" className="btn">Contact With us <InjectableSvg src="/assets/img/icon/right_arrow.svg" alt="" className="injectable" /></Link>
                </div>
                <div className="sidebar__shape" style={{ backgroundImage: `url(/assets/img/services/services_sidebar_shape.png)` }}></div>

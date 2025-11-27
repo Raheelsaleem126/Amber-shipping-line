@@ -3,14 +3,14 @@ import Hero from "./Hero"
 import AboutOne from "./About"
 // import Brand from "./Brand"
 import Service from "./Service"
-// import Choose from "./Choose"
+import Choose from "./Choose"
 // import Achieved from "./Achieved"
 // import Marquee from "./Marquee"
 // import Project from "./Project"
 // import VideoArea from "./VideoArea"
-// import RequestArea from "./RequestArea"
+import RequestArea from "./RequestArea"
 // import Testimonial from "./Testimonial"
-// import WorkArea from "./WorkArea"
+import WorkArea from "./WorkArea"
 // import Blog from "./Blog"
 import HeaderOne from "@/layouts/headers/HeaderOne"
 import ContactMap from "./ContactMap"
@@ -28,14 +28,18 @@ const HomeOne = () => {
             <LogoCloud/>
             {/* <Brand style={false} /> */}
             <Service />
-            {/* <Choose /> */}
+            <Choose />
             {/* <Achieved /> */}
             {/* <Marquee style={false} /> */}
             {/* <Project /> */}
             {/* <VideoArea style={false} /> */}
-            {/* <RequestArea style={false} /> */}
             {/* <Testimonial style={false} /> */}
-            {/* <WorkArea /> */}
+            <div style={{ marginBottom: '60px' }}>
+               <WorkArea />
+            </div>
+            {/* <div style={{ marginBottom: '60px' }}>
+               <RequestArea style={true} />
+            </div> */}
             {/* <Blog /> */}
             <ContactMap />
          </main>
