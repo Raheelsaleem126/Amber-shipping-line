@@ -25,7 +25,7 @@ const NavMenu = () => {
                {menu.has_dropdown && (
                   <>
                      {menu.sub_menus && (
-                        <ul className="sub-menu">
+                        <ul className="sub-menu" style={{color:"white"}}>
                            {menu.sub_menus.map((sub_m, i) => (
                               <li key={i} className={sub_m.mega_menu ? "menu-item-has-children" : ""}>
                                  <Link href={sub_m.link} className={`${sub_m.link && isSubMenuItemActive(sub_m.link) ? "active" : ""}`}>

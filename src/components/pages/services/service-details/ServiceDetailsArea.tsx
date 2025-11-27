@@ -92,7 +92,7 @@ const ServiceDetailsArea = ({ service }: Props) => {
                         <div className="services__details-inner-img">
                           <Image src={service_details2} alt="img" />
                           <a
-                            onClick={() => setIsVideoOpen(true)}
+                            onClick={() => setIsVideoOpen(false)}
                             style={{ cursor: "pointer" }}
                             className="play-btn popup-video"
                           >

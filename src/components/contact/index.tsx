@@ -1,19 +1,20 @@
 import Breadcumb from "@/components/common/Breadcumb"
 import ScrollToTop from "@/components/common/ScrollToTop"
-import FooterTwo from "@/layouts/footers/FooterTwo"
-import HeaderFour from "@/layouts/headers/HeaderFour"
+// import FooterTwo from "@/layouts/footers/FooterTwo"
 import ContactArea from "./ContactArea"
+import HeaderOne from "@/layouts/headers/HeaderOne"
+import FooterOne from "@/layouts/footers/FooterOne"
 
 const Contact = () => {
    return (
       <div className="theme-red">
          <ScrollToTop />
-         <HeaderFour />
+         <HeaderOne/>
          <main className="fix">
             <Breadcumb title="Contact Us" sub_title="Contact" />
             <ContactArea />
          </main>
-         <FooterTwo />
+         <FooterOne />
       </div>
    )
 }

@@ -2,11 +2,11 @@ import FooterOne from "@/layouts/footers/FooterOne"
 import Breadcumb from "../common/Breadcumb"
 // import Brand from "../homes/home-one/Brand"
 // import Testimonial from "../homes/home-one/Testimonial"
-import Team from "../homes/home-three/Team"
+// import Team from "../homes/home-three/Team"
 // import AboutArea from "./AboutArea"
 import AboutOne from "../homes/home-one/About"
 // import Counter from "./Counter"
-// import FeaturesArea from "./FeaturesArea"
+import FeaturesArea from "./FeaturesArea"
 // import Pricing from "./Pricing"
 // import VideoArea from "./VideoArea"
 import ScrollToTop from "../common/ScrollToTop"
@@ -22,11 +22,11 @@ const About = () => {
             <Breadcumb sub_title="About Us" title="About Us" />
             <AboutOne />
             <MarqueeArea/>
-            {/* <FeaturesArea /> */}
+            <FeaturesArea />
             {/* <VideoArea /> */}
             {/* <Counter /> */}
             {/* <Pricing /> */}
-            <Team style={false} />
+            {/* <Team style={false} /> */}
             {/* <Testimonial style={true} /> */}
             {/* <Brand /> */}
             <LogoCloud/>
