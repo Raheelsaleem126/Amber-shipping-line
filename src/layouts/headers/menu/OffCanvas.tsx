@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import logo from "@/assets/img/logo/logo.svg"
 import logo1 from "@/assets/img/logo/PNG A b.png"
 
 interface MobileSidebarProps {

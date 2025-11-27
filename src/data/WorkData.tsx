@@ -13,7 +13,7 @@ const work_data: DataType[] = [
       number: "01",
       icon: "flaticon-package",
       title: "Request Quote & Booking",
-      desc: (<>Submit your cargo details and shipping requirements. We'll provide competitive rates and available space options tailored to your needs.</>),
+      desc: (<>Submit your cargo details and shipping requirements. We&apos;ll provide competitive rates and available space options tailored to your needs.</>),
       shape: "/assets/img/images/work_shape01.svg",
    },
    {

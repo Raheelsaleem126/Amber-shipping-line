@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import sevice_details1 from "@/assets/img/logo/logo02.svg"
 import logo1 from "@/assets/img/logo/PNG A b.png"
 import InjectableSvg from "@/components/common/InjectableSvg"
 import service_data from "@/data/ServiceData"
