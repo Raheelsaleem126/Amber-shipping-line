@@ -19,134 +19,150 @@ interface DataType {
 }
 
 const team_data: DataType[] = [
+   // home_2
    {
       id: 1,
       page: "home_2",
       img: team_img1,
-      title: "Kristin Watson",
-      designation: "Investment Department"
+      title: "Ammar Imtiaz",
+      designation: "Trading Executive"
    },
    {
       id: 2,
       page: "home_2",
       img: team_img2,
-      title: "Guy Hawkins",
-      designation: "Investment Department"
+      title: "Ahmed",
+      designation: "Inventory Manager"
    },
    {
       id: 3,
       page: "home_2",
       img: team_img3,
-      title: "Wade Warren",
-      designation: "Investment Department"
+      title: "Saif",
+      designation: "Pricing Head"
    },
    {
       id: 4,
       page: "home_2",
       img: team_img4,
-      title: "Jenny Wilson",
-      designation: "Investment Department"
+      title: "Sharukh",
+      designation: "Booking and Docs Head"
    },
 
-   // home_2
-
+   // home_3
    {
       id: 1,
       page: "home_3",
       img: team_img5,
-      title: "Kristin Watson",
-      designation: "Investment Department",
+      title: "Ammar Imtiaz",
+      designation: "Trading Executive",
       data_aos_delay: "200",
    },
    {
       id: 2,
       page: "home_3",
       img: team_img6,
-      title: "Guy Hawkins",
-      designation: "Investment Department",
+      title: "Ahmed",
+      designation: "Inventory Manager",
       data_aos_delay: "400",
    },
    {
       id: 3,
       page: "home_3",
       img: team_img7,
-      title: "Wade Warren",
-      designation: "Investment Department",
+      title: "Saif",
+      designation: "Pricing Head",
       data_aos_delay: "600",
    },
    {
       id: 4,
       page: "home_3",
       img: team_img8,
-      title: "Jenny Wilson",
-      designation: "Investment Department",
+      title: "Sharukh",
+      designation: "Booking and Docs Head",
       data_aos_delay: "800",
    },
+   
    // inner_page
-
    {
       id: 1,
       page: "inner_page",
-      img: team_img5,
-      title: "Kristin Watson",
-      designation: "Investment Department",
+      img: team_img1,
+      title: "Ammar Imtiaz",
+      designation: "Trading Executive",
       data_aos_delay: "200",
    },
    {
       id: 2,
       page: "inner_page",
-      img: team_img6,
-      title: "Guy Hawkins",
-      designation: "Investment Department",
+      img: team_img2,
+      title: "Ahmed",
+      designation: "Inventory Manager",
       data_aos_delay: "400",
    },
    {
       id: 3,
       page: "inner_page",
-      img: team_img7,
-      title: "Wade Warren",
-      designation: "Investment Department",
+      img: team_img3,
+      title: "Saif",
+      designation: "Pricing Head",
       data_aos_delay: "600",
    },
    {
       id: 4,
       page: "inner_page",
-      img: team_img8,
-      title: "Jenny Wilson",
-      designation: "Investment Department",
+      img: team_img4,
+      title: "Daniyal",
+      designation: "Finance Executive",
       data_aos_delay: "800",
    },
    {
       id: 5,
       page: "inner_page",
       img: team_img5,
-      title: "Kristin Watson",
-      designation: "Investment Department",
+      title: "Masood",
+      designation: "Support Executive",
       data_aos_delay: "200",
    },
    {
       id: 6,
       page: "inner_page",
       img: team_img6,
-      title: "Guy Hawkins",
-      designation: "Investment Department",
+      title: "Sharukh",
+      designation: "Booking and Docs Head",
       data_aos_delay: "400",
    },
    {
       id: 7,
       page: "inner_page",
       img: team_img7,
-      title: "Wade Warren",
-      designation: "Investment Department",
+      title: "Ibarahim",
+      designation: "EQC Controller",
       data_aos_delay: "600",
    },
    {
       id: 8,
       page: "inner_page",
       img: team_img8,
-      title: "Jenny Wilson",
-      designation: "Investment Department",
+      title: "Bilal",
+      designation: "EQC Controller",
       data_aos_delay: "800",
+   },
+   {
+      id: 9,
+      page: "inner_page",
+      img: team_img1,
+      title: "Taha",
+      designation: "Finance Executive",
+      data_aos_delay: "200",
+   },
+   {
+      id: 10,
+      page: "inner_page",
+      img: team_img2,
+      title: "Sufiyan",
+      designation: "Inventory Handler",
+      data_aos_delay: "400",
    },
 ]
 

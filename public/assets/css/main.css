@@ -11930,3 +11930,12 @@ blockquote > p {
 }
 
 /*# sourceMappingURL=main.css.map */
+.tg-header__area.transparent {
+  background-color: rgba(0, 0, 0, 0) !important;
+  backdrop-filter: none !important; /* Remove any blur effects if present */
+}
+
+.tg-header__area.sticky-menu {
+  background-color: #FFFFFF !important;
+  transition: background-color 0.3s ease; /* Smooth transition for background change */
+}

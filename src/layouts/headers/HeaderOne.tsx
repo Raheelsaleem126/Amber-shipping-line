@@ -9,7 +9,7 @@ import OffCanvas from "./menu/OffCanvas"
 import HeaderSearch from "./menu/HeaderSearch"
 import MobileSidebar from "./menu/MobileSidebar"
 
-import logo from "@/assets/img/logo/logo.svg"
+import logo from "@/assets/img/logo/PNG A.png"
 
 const HeaderOne = () => {
 
@@ -22,18 +22,18 @@ const HeaderOne = () => {
       <header>
          <div id="header-fixed-height"></div>
          <HeaderTopOne />
-         <div id="sticky-header" className={`tg-header__area ${sticky ? "tg-sticky-menu sticky-menu sticky-menu__show" : ""}`}>
+       <div id="sticky-header" className={`tg-header__area ${sticky ? "tg-sticky-menu sticky-menu sticky-menu__show" : ""}`} style={{ background: "linear-gradient(to right, #000033, #FFFFFF)" }}>
             <div className="container-fluid p-0">
                <div className="row gx-0">
                   <div className="col-12">
                      <div className="tgmenu__wrap">
                         <div className="tgmenu__nav-left-side">
                            <div className="offcanvas-toggle">
-                              <Link href="#" onClick={() => setOffCanvas(true)} className="menu-tigger">
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                    <path d="M1.66669 15H28.3334M1.66669 6.66666H28.3334M1.66669 23.3333H28.3334" stroke="currentcolor" strokeWidth="1.83333" strokeLinecap="round" strokeLinejoin="round" />
-                                 </svg>
-                              </Link>
+                             <Link href="#" onClick={() => setOffCanvas(true)} className="menu-tigger">
+   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+      <path d="M1.66669 15H28.3334M1.66669 6.66666H28.3334M1.66669 23.3333H28.3334" stroke="#FFFFFF" strokeWidth="1.83333" strokeLinecap="round" strokeLinejoin="round" />
+   </svg>
+</Link>
                            </div>
                            <div className="logo">
                               <Link href="/"><Image src={logo} alt="Logo" /></Link>
@@ -58,6 +58,17 @@ const HeaderOne = () => {
                                     <Link href="tel:0123456789">(205) 555-0100</Link>
                                  </div>
                               </li> */}
+                              <li className="header-btn">
+                                 <Link
+                                    href="https://wa.me/923434613799?text=Hello%20I%20have%20query!"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn"
+                                    style={{ backgroundColor: "#25D366", color: "#FFFFFF" }}
+                                 >
+                                    <i className="fab fa-whatsapp"></i>WhatsApp
+                                 </Link>
+                              </li>
                               <li className="header-btn"><Link href="/contact" className="btn"><i className="flaticon-uptrend"></i>Track Order</Link></li>
                            </ul>
                         </div>

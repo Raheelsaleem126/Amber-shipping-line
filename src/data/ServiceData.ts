@@ -42,7 +42,7 @@ const service_data: DataType[] = [
     page: "home_1",
     img: service_2,
     icon: "flaticon-ship",
-    title: "Reefer Container",
+    title: "OT Container",
     desc: "Temperature-controlled reefer containers available for perishable and sensitive cargo.",
   },
   {
@@ -121,45 +121,48 @@ const service_data: DataType[] = [
     },
   },
   {
-    id: 2,
-    page: "inner_page",
-    img: service_2,
-    icon: "flaticon-ship",
-    title: "Reefer Container",
-    desc: "Reefer containers designed for temperature-sensitive cargo like food and pharmaceuticals.",
-    details: {
-      title: "Reefer Container Solutions",
-      description:
-        "Specialized reefer containers maintain optimal temperatures for perishable goods like food and pharmaceuticals.",
-      progress: [
-        { title: "Successful Delivery", value: 85 },
-        { title: "Customer Satisfaction", value: 92 },
-      ],
-      inner_title: "Why Choose Our Reefer Container Services",
-      inner_description:
-        "Advanced temperature control technology ensures your sensitive cargo arrives in perfect condition.",
-      benefits: [
-        "High-Quality Service Standards",
-        "100% Client Satisfaction Focus",
-        "Experienced Logistics Professionals",
-        "Reliable and Timely Delivery",
-      ],
-      faqs: [
-        {
-          question: "What makes your Reefer Container service unique?",
-          answer: "We provide tailored solutions with a focus on reliability, efficiency, and customer satisfaction.",
-        },
-        {
-          question: "Do you offer customized solutions?",
-          answer: "Yes, we tailor our services to meet specific client needs, ensuring flexibility and efficiency.",
-        },
-        {
-          question: "What are your payment terms?",
-          answer: "We offer flexible payment options, including bank transfers and credit terms, customized to your agreement.",
-        },
-      ],
-    },
+  id: 2,
+  page: "inner_page",
+  img: service_2,  
+  icon: "flaticon-ship", 
+  title: "OT Container",
+  desc: "Open-top containers for oversized, heavy, or top-loaded cargo.",
+  details: {
+    title: "OT (Open-Top) Container Solutions",
+    description:
+      "OT containers (Open-Top) are built without a fixed roof and use removable tarpaulins or hard covers to allow loading from above. They are ideal for oversized, tall, or irregular cargo such as machinery, steel, or structural components that cannot be loaded through side doors. :contentReference[oaicite:0]{index=0}",
+    progress: [
+      { title: "On-Time Delivery", value: 90 },
+      { title: "Cargo Integrity", value: 95 },
+    ],
+    inner_title: "Why Choose Our OT Container Services",
+    inner_description:
+      "With flexible access from the top, strong lashing systems, and tailored covers, OT containers offer unmatched versatility for challenging cargo that exceeds standard container dimensions. We ensure safe handling of items that are too tall or bulky for conventional containers. :contentReference[oaicite:1]{index=1}",
+    benefits: [
+      "Top-loading flexibility for oversized cargo",
+      "Durable tarpaulin or hard-cover options",
+      "Strong lashing and securing systems",
+      "Reliable service across global routes",
+    ],
+    faqs: [
+      {
+        question: "What types of cargo are best for OT containers?",
+        answer:
+          "OT containers are ideal for cargo that’s too tall, bulky or irregular in shape to fit through standard side doors — e.g. large machinery, structural components, steel coils, or glass panels.",
+      },
+      {
+        question: "How is the roof closed / secured?",
+        answer:
+          "After loading, the open top is covered with a tarpaulin or removable hard cover and secured with bows or steel beams. Internal lashing systems help secure the load.",
+      },
+      {
+        question: "Are OT containers more expensive than standard containers?",
+        answer:
+          "They can incur higher costs because they require special handling, covers, and often cannot be stacked as efficiently. However, for oversized cargo they are often the only viable option.",
+      },
+    ],
   },
+},
   {
     id: 3,
     page: "inner_page",

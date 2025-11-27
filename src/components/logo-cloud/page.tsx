@@ -11,26 +11,26 @@ export default function LogoCloud() {
 						<ul className="carouselTicker__list pb-4">
 							<Marquee direction="right">
 								<li className="carouselTicker__item bg-white py-3 px-4 shadow-1 rounded-2 align-self-center icon-height icon-shape hover-up me-2 mb-2">
-									<img className="filter-invert" src="/assets/img/logo-cloud/Semble Logo2.png" alt="infinia" />
+									<img className="filter-invert" src="/assets/img/partners/partner1.png" alt="infinia" />
 								</li>
 								<li className="carouselTicker__item bg-white py-3 px-4 shadow-1 rounded-2 align-self-center icon-height icon-shape hover-up me-2 mb-2">
-									<img src="/assets/img/logo-cloud/CMA Logo2.png" alt="infinia" />
+									<img src="/assets/img/partners/partner2.png" alt="infinia" />
 								</li>
 								<li className="carouselTicker__item bg-white py-3 px-4 shadow-1 rounded-2 align-self-center icon-height icon-shape hover-up me-2 mb-2">
-									<img src="/assets/img/logo-cloud/CQC Logo2.png" alt="infinia" />
+									<img src="/assets/img/partners/partner3.png" alt="infinia" />
 								</li>
 								<li className="carouselTicker__item bg-white py-3 px-4 shadow-1 rounded-2 align-self-center icon-height icon-shape hover-up me-2 mb-2">
-									<img src="/assets/img/logo-cloud/247 Logo2.png" alt="infinia" />
+									<img src="/assets/img/partners/partner4(1).png" alt="infinia" />
 								</li>
 							<li className="carouselTicker__item bg-white py-3 px-4 shadow-1 rounded-2 align-self-center icon-height icon-shape hover-up me-2">
-											<img className="filter-invert" src="/assets/img/logo-cloud/logo-8.svg" alt="infinia" />
+											<img className="filter-invert" src="/assets/img/partners/partner5.png" alt="infinia" />
 										</li>
 										<li className="carouselTicker__item bg-white py-3 px-4 shadow-1 rounded-2 align-self-center icon-height icon-shape hover-up me-2">
-											<img className="filter-invert" src="/assets/img/logo-cloud/logo-9.svg" alt="infinia" />
+											<img className="filter-invert" src="/assets/img/partners/partner6.png" alt="infinia" />
 										</li>
-										<li className="carouselTicker__item bg-white py-3 px-4 shadow-1 rounded-2 align-self-center icon-height icon-shape hover-up me-2">
-											<img className="filter-invert" src="/assets/img/logo-cloud/logo-12.svg" alt="infinia" />
-										</li>
+										{/* <li className="carouselTicker__item bg-white py-3 px-4 shadow-1 rounded-2 align-self-center icon-height icon-shape hover-up me-2">
+											<img className="filter-invert" src="/assets/img/partners/partner7.png" alt="infinia" />
+										</li> */}
 							</Marquee>
 						</ul>
 					</div>

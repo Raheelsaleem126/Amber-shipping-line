@@ -60,77 +60,86 @@ const RequestArea = ({ style }: PropsType) => {
                                     <div className="col-lg-4">
                                        <div className="form-grp">
                                           <div className="form-grp select-grp">
-                                             <select name="interest" className="orderby">
-                                                <option value="Freight Type">Freight Type</option>
-                                                <option value="Freight Type">Freight Type</option>
-                                                <option value="Freight Type">Freight Type</option>
+                                             <select name="service" className="orderby">
+                                                <option value="">Select Service Type</option>
+                                                <option value="Dry Container">Dry Container</option>
+                                                <option value="OT Container">OT Container</option>
+                                                <option value="Freight Forwarding">Freight Forwarding</option>
+                                                <option value="NVOCC Services">NVOCC Services</option>
+                                                <option value="Container Trading">Container Trading</option>
+                                                <option value="Afghan Transit">Afghan Transit</option>
                                              </select>
                                           </div>
                                        </div>
                                     </div>
                                     <div className="col-lg-4">
                                        <div className="form-grp">
-                                          <input type="text" placeholder="City Of Departure" />
+                                          <input type="text" placeholder="Port of Origin" />
                                        </div>
                                     </div>
                                     <div className="col-lg-4">
                                        <div className="form-grp">
-                                          <input type="text" placeholder="Delivery City" />
+                                          <input type="text" placeholder="Port of Destination" />
                                        </div>
                                     </div>
                                     <div className="col-lg-4">
                                        <div className="form-grp select-grp">
-                                          <select name="interest" className="orderby">
-                                             <option value="Incoterms">Incoterms</option>
-                                             <option value="Incoterms">Incoterms</option>
-                                             <option value="Incoterms">Incoterms</option>
+                                          <select name="incoterms" className="orderby">
+                                             <option value="">Select Incoterms</option>
+                                             <option value="FOB">FOB (Free On Board)</option>
+                                             <option value="CIF">CIF (Cost, Insurance & Freight)</option>
+                                             <option value="CFR">CFR (Cost & Freight)</option>
+                                             <option value="EXW">EXW (Ex Works)</option>
+                                             <option value="FCA">FCA (Free Carrier)</option>
+                                             <option value="DDP">DDP (Delivered Duty Paid)</option>
                                           </select>
                                        </div>
                                     </div>
                                     <div className="col-lg-4">
-                                       <div className="form-grp-wrap">
-                                          <div className="form-grp">
-                                             <input type="text" placeholder="Weight" />
-                                          </div>
-                                          <div className="form-grp">
-                                             <input type="text" placeholder="Height" />
-                                          </div>
+                                       <div className="form-grp">
+                                          <input type="text" placeholder="Cargo Weight (kg)" />
                                        </div>
                                     </div>
                                     <div className="col-lg-4">
-                                       <div className="form-grp-wrap">
-                                          <div className="form-grp">
-                                             <input type="text" placeholder="Weight" />
-                                          </div>
-                                          <div className="form-grp">
-                                             <input type="text" placeholder="Length" />
-                                          </div>
+                                       <div className="form-grp select-grp">
+                                          <select name="container" className="orderby">
+                                             <option value="">Container Size</option>
+                                             <option value="20ft">20ft Container</option>
+                                             <option value="40ft">40ft Container</option>
+                                             <option value="40ft HC">40ft High Cube</option>
+                                             <option value="Other">Other</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div className="col-lg-12">
+                                       <div className="form-grp">
+                                          <textarea name="cargo_description" placeholder="Cargo Description (e.g., type of goods, special requirements)" rows={3}></textarea>
                                        </div>
                                     </div>
                                  </div>
                                  <div className={`request__radio-wrap ${style ? "request__radio-wrap-two" : ""}`}>
                                     <div className="form-check">
-                                       <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" defaultChecked />
-                                       <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                          Fragile
+                                       <input className="form-check-input" type="checkbox" name="services" id="flexCheckDefault1" />
+                                       <label className="form-check-label" htmlFor="flexCheckDefault1">
+                                          Customs Clearance
                                        </label>
                                     </div>
                                     <div className="form-check">
-                                       <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-                                       <label className="form-check-label" htmlFor="flexRadioDefault2">
+                                       <input className="form-check-input" type="checkbox" name="services" id="flexCheckDefault2" />
+                                       <label className="form-check-label" htmlFor="flexCheckDefault2">
+                                          Cargo Insurance
+                                       </label>
+                                    </div>
+                                    <div className="form-check">
+                                       <input className="form-check-input" type="checkbox" name="services" id="flexCheckDefault3" />
+                                       <label className="form-check-label" htmlFor="flexCheckDefault3">
+                                          Documentation Services
+                                       </label>
+                                    </div>
+                                    <div className="form-check">
+                                       <input className="form-check-input" type="checkbox" name="services" id="flexCheckDefault4" />
+                                       <label className="form-check-label" htmlFor="flexCheckDefault4">
                                           Express Delivery
-                                       </label>
-                                    </div>
-                                    <div className="form-check">
-                                       <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
-                                       <label className="form-check-label" htmlFor="flexRadioDefault3">
-                                          Insurance
-                                       </label>
-                                    </div>
-                                    <div className="form-check">
-                                       <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" />
-                                       <label className="form-check-label" htmlFor="flexRadioDefault4">
-                                          Packaging
                                        </label>
                                     </div>
                                  </div>
@@ -139,41 +148,43 @@ const RequestArea = ({ style }: PropsType) => {
                            </div>
                            <div className={`tab-pane fade ${activeTab === 1 ? 'show active' : ''}`} id="track-tab-pane">
                               <form onSubmit={(e) => e.preventDefault()} className="request__form">
-                                 <span className="title">Shipment Type</span>
+                                 <span className="title">Tracking Information</span>
                                  <div className="form-grp select-grp">
-                                    <select name="interest" className="orderby">
-                                       <option value="Incoterms">Incoterms</option>
-                                       <option value="Incoterms">Incoterms</option>
-                                       <option value="Incoterms">Incoterms</option>
+                                    <select name="tracking_type" className="orderby">
+                                       <option value="">Select Document Type</option>
+                                       <option value="Bill of Lading">Bill of Lading (B/L)</option>
+                                       <option value="Container Number">Container Number</option>
+                                       <option value="Booking Reference">Booking Reference</option>
+                                       <option value="House Bill of Lading">House Bill of Lading (HBL)</option>
                                     </select>
                                  </div>
                                  <span className="title">Tracking Number</span>
                                  <div className="form-grp">
-                                    <textarea name="comment" placeholder="You can enter up to a maximum of 10 airway bill numbers for tracking"></textarea>
+                                    <textarea name="tracking_numbers" placeholder="Enter your tracking number(s). You can enter up to 10 tracking numbers separated by commas." rows={4}></textarea>
                                  </div>
                                  <div className={`request__radio-wrap ${style ? "request__radio-wrap-two" : ""}`}>
                                     <div className="form-check">
-                                       <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" defaultChecked />
+                                       <input className="form-check-input" type="radio" name="trackingService" id="flexRadioDefault5" value="Dry Container" />
                                        <label className="form-check-label" htmlFor="flexRadioDefault5">
-                                          Air Freight
+                                          Dry Container
                                        </label>
                                     </div>
                                     <div className="form-check">
-                                       <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" />
+                                       <input className="form-check-input" type="radio" name="trackingService" id="flexRadioDefault6" value="OT Container" />
                                        <label className="form-check-label" htmlFor="flexRadioDefault6">
-                                          Ocean Freight
+                                          OT Container
                                        </label>
                                     </div>
                                     <div className="form-check">
-                                       <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" />
+                                       <input className="form-check-input" type="radio" name="trackingService" id="flexRadioDefault7" value="Freight Forwarding" defaultChecked />
                                        <label className="form-check-label" htmlFor="flexRadioDefault7">
-                                          Road Freight
+                                          Freight Forwarding
                                        </label>
                                     </div>
                                     <div className="form-check">
-                                       <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8" />
+                                       <input className="form-check-input" type="radio" name="trackingService" id="flexRadioDefault8" value="NVOCC Services" />
                                        <label className="form-check-label" htmlFor="flexRadioDefault8">
-                                          Express Delivery
+                                          NVOCC Services
                                        </label>
                                     </div>
                                  </div>

@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 import { useState } from "react";
 import InjectableSvg from "@/components/common/InjectableSvg";
 
-const marquee_title: string[] = ["Air Freight", "Logistics", "Delivery Service", "Tracking", "Warehouse"];
+const marquee_title: string[] = ["Dry Container", "OT Container", "Freight Forwarding", "NVOCC Services", "Container Trading","Afghan Transit"];
 
 interface PropsType {
     style?: boolean;

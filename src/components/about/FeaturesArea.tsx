@@ -2,50 +2,123 @@ import Image from "next/image"
 import shape from "@/assets/img/images/features_shape.png"
 
 const FeaturesArea = () => {
+   const services = [
+      {
+         title: "Automotives",
+         desc: "Efficient logistics solutions powering automotive trade.",
+         img: "/assets/img/newfolder2/Automotives.png",
+         number: "01",
+      },
+      {
+         title: "Mining",
+         desc: "Reliable transport services supporting mining trade.",
+         img: "/assets/img/newfolder2/Mining.png",
+         number: "02",
+      },
+      {
+         title: "Machinery",
+         desc: "Secure freight solutions simplifying machinery trade.",
+         img: "/assets/img/newfolder2/Machinery.png",
+         number: "03",
+      },
+      {
+         title: "Power",
+         desc: "Trusted logistics services supporting power trade.",
+         img: "/assets/img/newfolder2/Power.png",
+         number: "04",
+      },
+      {
+         title: "Steel",
+         desc: "Reliable freight solutions powering global steel trade.",
+         img: "/assets/img/newfolder2/Steel.png",
+         number: "05",
+      },
+      {
+         title: "Oil",
+         desc: "Efficient logistics services powering oil trade.",
+         img: "/assets/img/newfolder2/Oil.png",
+         number: "06",
+      },
+      {
+         title: "Energy",
+         desc: "Global freight services supporting energy trade.",
+         img: "/assets/img/newfolder2/Energy.png",
+         number: "07",
+      },
+      {
+         title: "Cement",
+         desc: "Reliable logistics services powering cement trade.",
+         img: "/assets/img/newfolder2/Cement.png",
+         number: "08",
+      },
+      {
+         title: "Health",
+         desc: "Trusted freight solutions supporting healthcare trade.",
+         img: "/assets/img/newfolder2/Health.png",
+         number: "09",
+      },
+      
+      {
+         title: "Pharmaceutical",
+         desc: "Global freight services supporting energy trade.",
+         img: "/assets/img/newfolder2/Pharmaceutical.png",
+         number: "07",
+      },
+      {
+         title: "Manufacturing",
+         desc: "Reliable logistics services powering cement trade.",
+         img: "/assets/img/newfolder2/Steel.png",
+         number: "08",
+      },
+      {
+         title: "Construction",
+         desc: "Trusted freight solutions supporting healthcare trade.",
+         img: "/assets/img/newfolder2/Construction.png",
+         number: "09",
+      }
+   ]
+
    return (
       <section className="features__area section-pb-90">
          <div className="container">
             <div className="row justify-content-center gutter-24">
-               <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                  <div className="features__item">
-                     <div className="features__icon">
-                        <i className="flaticon-warehouse-1"></i>
-                     </div>
-                     <div className="features__content">
-                        <h2 className="title">Warehouse</h2>
-                        <p>When an unknown printer took a galley typeat better future.</p>
-                        <h2 className="number">01</h2>
-                     </div>
-                  </div>
-               </div>
-               <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                  <div className="features__item">
-                     <div className="features__icon">
-                        <i className="flaticon-air-freight"></i>
-                     </div>
-                     <div className="features__content">
-                        <h2 className="title">Air Freight</h2>
-                        <p>When an unknown printer took a galley typeat better future.</p>
-                        <h2 className="number">02</h2>
-                     </div>
-                  </div>
-               </div>
-               <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
-                  <div className="features__item">
-                     <div className="features__icon">
-                        <i className="flaticon-ship"></i>
-                     </div>
-                     <div className="features__content">
-                        <h2 className="title">Ship Cargo</h2>
-                        <p>When an unknown printer took a galley typeat better future.</p>
-                        <h2 className="number">03</h2>
+               {services.map((service, index) => (
+                  <div
+                     className="col-lg-4 col-md-6"
+                     data-aos="fade-up"
+                     // data-aos-delay={}
+                     key={index}
+                  >
+                     <div className="features__item">
+                        <div className="features__icon">
+                           <Image
+                              src={service.img}
+                              alt={service.title}
+                              width={350}   // Bigger but not full 530px
+                              height={350}  // Keeps ratio close to 530x300
+                              style={{
+                                 objectFit: "contain",
+                                 borderRadius: "12px", // optional rounded look
+                              }}
+                           />
+                        </div>
+                        <div className="features__content">
+                           <h2 className="title">{service.title}</h2>
+                           <p>{service.desc}</p>
+                           <h2 className="number">{service.number}</h2>
+                        </div>
                      </div>
                   </div>
-               </div>
+               ))}
             </div>
          </div>
          <div className="features__shape">
-            <Image src={shape} alt="shape" data-aos="fade-left" data-aos-delay="400" />
+            <Image
+               src={shape}
+               alt="shape"
+               data-aos="fade-left"
+               data-aos-delay="400"
+            />
          </div>
       </section>
    )

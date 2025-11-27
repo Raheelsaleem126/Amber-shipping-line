@@ -8,6 +8,9 @@ import shape_2 from "@/assets/img/services/services_shape02.png"
 
 
 const Service = () => {
+    const generateSlug = (title: string) => {
+    return title.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
+  };
    return (
       <section className="services__area fix">
          <div className="container">
@@ -26,19 +29,19 @@ const Service = () => {
             </div>
             <div className="row gutter-24 justify-content-center">
                {service_data.filter((items) => items.page === "home_1").map((item) => (
-                  <div key={item.id} className="col-xl-3 col-lg-4 col-sm-6">
+                  <div key={item.id} className="col-xl-4 col-lg-4 col-sm-6">
                      <div className="services__item">
                         <div className="services__thumb-wrap">
                            <div className="services__thumb">
                               <Image src={item.img ? item.img : ""} alt="img" />
-                              <Link href="/services-details" className="btn btn-two border-btn">Read More <InjectableSvg src="/assets/img/icon/right_arrow.svg" alt="" className="injectable" /></Link>
+                              <Link href={`/services-details/${generateSlug(item.title)}`} className="btn btn-two border-btn">Read More <InjectableSvg src="/assets/img/icon/right_arrow.svg" alt="" className="injectable" /></Link>
                            </div>
                            <div className="services__icon">
                               <i className={item.icon}></i>
                            </div>
                         </div>
                         <div className="services__content">
-                           <h3 className="title"><Link href="/services-details">{item.title}</Link></h3>
+                           <h3 className="title"><Link href={`/services-details/${generateSlug(item.title)}`}>{item.title}</Link></h3>
                            <p>{item.desc}</p>
                         </div>
                      </div>

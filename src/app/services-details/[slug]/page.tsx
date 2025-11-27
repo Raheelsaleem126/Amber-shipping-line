@@ -70,7 +70,7 @@ const ServiceDetailsPage: NextPage<PageProps> = async ({ params }) => {
     title: serviceItem.title,
     sub_title: serviceItem.title,
     description: serviceItem.desc,
-    img: serviceItem.img, // img is StaticImageData | undefined
+    img: serviceItem.img, 
     details: {
       title: serviceItem.details.title,
       description: serviceItem.details.description,
